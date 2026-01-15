@@ -4,6 +4,7 @@ import * as motion from "motion/react-client"
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ArrowRight, Calendar } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturedSection(){
     const posts = FeaturedPosts;
@@ -36,8 +37,15 @@ export default function FeaturedSection(){
                                         bg-card/50 backdrop-blur-xs py-0">
                             <CardHeader className="p-0">
                                 <div className="relative">
-                                    <img src={post.image} alt={post.titles} className="w-full h-48 object-cover 
+                                    <div className="w-full h-48 relative">
+                                    <Image
+                                    fill 
+                                    src={post.image} 
+                                    alt={post.titles} 
+                                    className="object-cover 
                                     transition-transform duration-300 group-hover:scale-105"/>
+                                    </div>
+                                    
 
                                     <div className="absolute top-4 left-4">
                                         <Badge variant="secondary" className="bg-background/80 backdrop-blur-xs">

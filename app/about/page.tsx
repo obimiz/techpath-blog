@@ -2,6 +2,7 @@ import { div, section } from "motion/react-client";
 import Image from "next/image";
 import { Target, Globe } from "lucide-react";
 import * as motion from "motion/react-client"
+import { Lightbulb, Code, BrickWallShield, MapPlus, Wrench, BookOpen} from 'lucide-react';
 
 
 export default function AboutPage() {
@@ -122,34 +123,51 @@ export default function AboutPage() {
                                 transition={{ duration: 0.6}}
                                 className="bg-white p-6 shadow rounded-xl hover:shadow-lg"
                                 >
-                                <h3 className="text-xl font-bold mb-4 text-primary">AI & Future of Work</h3>
+                                <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-blue-100">
+                                    <Lightbulb className="w-8 h-8 text-primary" />
+                                </div>
+                                <h3 className="text-xl font-bold mb-4 text-black">AI & Future of Work</h3>
                                 <p className="text-black text-lg">Insights on artificial intelligence and its impact on careers and industries.</p>
                             
                               </motion.div>
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
-                            
-                                <h3 className="text-primary text-xl font-bold mb-4">Web Development</h3>
+                                <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-green-100">
+                                    <Code className="w-8 h-8 text-green-500"/>
+                                </div>
+                                <h3 className="text-black text-xl font-bold mb-4">Web Development</h3>
                                 <p className="text-black text-lg">Modern web technologies, frameworks, and best practices for developers.</p>                            
                             </motion.div>
 
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
-                                <h3 className="text-xl font-bold mb-4 text-primary">Blockchain</h3>
+                                 <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-indigo-100">
+                                    <BrickWallShield className="w-8 h-8 text-indigo-500"/>
+                                </div>
+                                <h3 className="text-xl font-bold mb-4 text-black">Blockchain</h3>
                                 <p className="text-black text-lg">Decentralized technologies, smart contracts, and the future of digital assets.</p>
                             </motion.div>
 
 
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
-                                 <h3 className="text-xl font-bold mb-4 text-primary">Digital Creativity</h3>
+                                 <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-pink-100">
+                                    <MapPlus className="w-8 h-8 text-pink-500"/>
+                                </div>
+                                 <h3 className="text-xl font-bold mb-4 text-black">Digital Creativity</h3>
                                <p className="text-black text-lg">Design thinking, creative tools, and building digital products.</p> 
                             </motion.div>
 
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
-                                <h3 className="text-xl font-bold mb-4 text-primary">Gadgets & Tools</h3>
+                                 <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-purple-100">
+                                    <Wrench w-8 h-8 text-purple-500/>
+                                </div>
+                                <h3 className="text-xl font-bold mb-4 text-black">Gadgets & Tools</h3>
                                 <p className="text-black text-lg">Reviews and recommendations on tools and tech Nigerians need.</p>
                             </motion.div>
 
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
-                                <h3 className="text-xl font-bold mb-4 text-primary">Tech Education</h3>
+                                 <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-green-100">
+                                    <BookOpen className="w-8 h-8 text-green-500"/>
+                                </div>
+                                <h3 className="text-xl font-bold mb-4 text-black">Tech Education</h3>
                                 <p className="text-black text-lg">Learning resources and career guidance for aspiring developers.</p>
                             </motion.div>
 

@@ -157,7 +157,7 @@ export default function AboutPage() {
 
                             <motion.div className="bg-white p-6 shadow rounded-xl hover:shadow-lg">
                                  <div className="w-12 h-12 rounded-full flex items-center mb-4 justify-center bg-purple-100">
-                                    <Wrench w-8 h-8 text-purple-500/>
+                                    <Wrench className="w-8 h-8 text-purple-500"/>
                                 </div>
                                 <h3 className="text-xl font-bold mb-4 text-black">Gadgets & Tools</h3>
                                 <p className="text-black text-lg">Reviews and recommendations on tools and tech Nigerians need.</p>
@@ -170,13 +170,7 @@ export default function AboutPage() {
                                 <h3 className="text-xl font-bold mb-4 text-black">Tech Education</h3>
                                 <p className="text-black text-lg">Learning resources and career guidance for aspiring developers.</p>
                             </motion.div>
-
-                                
-                      
-                        
-
                     </div>
-
 
                 </div>
     </section>

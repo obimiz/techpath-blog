@@ -1,3 +1,5 @@
+import { Brain, Code, Blocks, Palette, GraduationCap } from "lucide-react"
+
 export const FeaturedPosts = [
     {
          id: "1",
@@ -125,3 +127,42 @@ export const quotes = [
         author: "Albert Einstein",
     }
 ];
+
+const Categories = [
+    {
+         title: "AI & Future of Work",
+         slug: "ai-future-of-work",
+         description: "Artificial intelligence and its impact on careers.",
+         icon: Brain
+    },
+    {
+        title: "Web Development",
+        slug: "web-development",
+        description: "Modern frameworks and best practices.",
+        icon: Code
+    },
+    {
+        title: "Blockchain",
+        slug: "blockchain",
+        description: "Decentralized technologies and smart contracts.",
+        icon: Blocks
+    },
+    {
+        title: "Digital Creativity",
+        slug: "digital-creativity",
+        description: "Design thinking and digital products.",
+        icon: Palette
+    },
+    {
+        title: "Digital Creativity",
+        slug: "digital-creativity",
+        description: "Design thinking and digital products.",
+        icon: Palette
+    },
+    {
+        title: "Tech Education",
+        slug: "tech-education",
+        description: "Learning resources and career growth.",
+        icon: GraduationCap
+    }
+]
